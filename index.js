@@ -1,7 +1,7 @@
 // Task 1: Define library array
 let library = [];
 
-// Task 1: Use push function to add new books to library
+// Use push function to add new books to library
 library.push( 
     { title: "To Kill a Mockingbird", author: "Harper Lee", readStatus: false },
     { title: "1984", author: "George Orwell", readStatus: false },
@@ -19,7 +19,7 @@ library.push(
 let indexLordOfTheRings = library.findIndex(book => book.title === "The Lord of the Rings");
 console.log("Index of 'The Lord of the Rings':", indexLordOfTheRings);
 
-// Task 2: If the book is found, mark it as read
+// If the book is found, mark it as read
 if (indexLordOfTheRings !== -1) {
     library[indexLordOfTheRings].readStatus = true;
     console.log("Marked 'The Lord of the Rings' as read.");
@@ -30,7 +30,7 @@ if (indexLordOfTheRings !== -1) {
 // Task 3: Find the index of the book titled "1984"
 let index1984 = library.findIndex(book => book.title === "1984");
 
-// Task 3: If the book is found, remove it
+// If the book is found, remove it
 if (index1984 !== -1) {
     library.splice(index1984, 1);
     console.log("Removed '1984' from the library.");
