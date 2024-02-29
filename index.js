@@ -22,6 +22,7 @@ addBook("The Chronicles of Narnia", "C.S. Lewis");
 function markAsRead(title){
     let index = library.findIndex(book => book.title === title)
    
+    // If find the book by title, chage readStatus to true
     if (index !== -1) {
         library[index].readStatus = true;
         console.log("Marked the '" + title + "' as read.");
